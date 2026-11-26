@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeliPop Design Lab — Spatial and Product Design</title>
+  <meta name="description" content="MeliPop Design Lab is a spatial and product design practice founded by Melicia Planchart. Play. Make. Transform." />
+
+  <!-- Fonts: Expressive Display Serif + Clean Geometric Sans + Architectural Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#app-main">Skip to content</a>
+
+  <!-- Top Brand & Colour-Coded Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-top">
+      <a href="#home" class="brand-mark" data-nav="home" aria-label="MeliPop Design Lab Home">
+        <span class="brand-dots" aria-hidden="true">
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-pink"></span>
+          <span class="dot dot-blue"></span>
+        </span>
+        <span class="brand-text">
+          <strong>MELIPOP</strong>
+          <span class="brand-sub">DESIGN LAB</span>
+        </span>
+      </a>
+
+      <div class="header-tagline">
+        <span>Spatial and Product Design</span>
+        <span class="sep" aria-hidden="true">·</span>
+        <strong>Play. Make. Transform.</strong>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <a href="#work" class="nav-band nav-work" data-nav="work">
+        <span class="nav-title">WORK</span>
+        <span class="nav-desc">Projects plus Research and Teaching</span>
+      </a>
+      <a href="#shop" class="nav-band nav-shop" data-nav="shop">
+        <span class="nav-title">SHOP</span>
+        <span class="nav-desc">Games, books, objects and editions</span>
+      </a>
+      <a href="#studio" class="nav-band nav-studio" data-nav="studio">
+        <span class="nav-title">STUDIO</span>
+        <span class="nav-desc">Profile, trajectory, collaborators and contact</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Dynamic View Container -->
+  <main id="app-main" class="app-main" tabindex="-1"></main>
+
+  <!-- Project Detail Modal / Drawer -->
+  <div class="modal-backdrop" id="modal-backdrop" hidden aria-hidden="true">
+    <div class="modal-panel" id="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-topbar">
+        <div class="modal-breadcrumb" id="modal-breadcrumb"></div>
+        <button class="modal-close" id="modal-close" aria-label="Close detail view">
+          <span>Close</span>
+          <span class="close-x" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">MeliPop Design Lab</div>
+        <p class="footer-quote"><em>For us, complexity is a fun idea. And simplicity, a fun challenge.</em></p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-label">Explore</span>
+        <a href="#home">Home</a>
+        <a href="#work">Work — Projects</a>
+        <a href="#work/research">Work — Research &amp; Teaching</a>
+        <a href="#shop">Shop</a>
+        <a href="#studio">Studio</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-label">Scales</span>
+        <a href="#work/S">S · Products</a>
+        <a href="#work/M">M · Interiors</a>
+        <a href="#work/L">L · Architecture</a>
+        <a href="#work/XL">XL · Large Scale</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-label">Connect</span>
+        <a href="#studio/collaborators">Collaborators</a>
+        <a href="#studio/contact">Contact</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year">2026</span> MeliPop Design Lab · Founded by Melicia Planchart</span>
+      <span>Spatial &amp; Product Design · Play. Make. Transform.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/artwork.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

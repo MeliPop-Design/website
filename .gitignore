@@ -1,0 +1,11 @@
+# Working summary documents & office lock files
+*.pdf
+*.docx
+.~lock.*
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
