@@ -6,10 +6,10 @@
 
 window.MELIPOP_ART = (function () {
   const PALETTES = {
-    S: ['#FDE4EE', '#F58CB1', '#F2D246', '#141413'],
-    M: ['#FDF5CC', '#F2D246', '#79C2E3', '#141413'],
-    L: ['#E1F2FA', '#79C2E3', '#F58CB1', '#141413'],
-    XL: ['#EFECE3', '#141413', '#F2D246', '#79C2E3'],
+    S: ['#FFE6DF', '#FF4A1C', '#C9E600', '#3B0A4A'],
+    M: ['#F4F9C8', '#C9E600', '#0033D6', '#3B0A4A'],
+    L: ['#E3E9FF', '#0033D6', '#FF4A1C', '#3B0A4A'],
+    XL: ['#EFEAF2', '#3B0A4A', '#C9E600', '#3B0A4A'],
   };
 
   function getArtworkSVG(motif, scale) {
@@ -161,7 +161,7 @@ window.MELIPOP_ART = (function () {
     };
 
     function c3(fallback) {
-      return scale === 'XL' ? '#79C2E3' : fallback;
+      return scale === 'XL' ? '#0033D6' : fallback;
     }
 
     const body = motifs[motif] || motifs.blocks;

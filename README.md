@@ -1,10 +1,10 @@
-# MeliPop Design Lab — Website
+# Melipop Design Lab — Website
 
 **Spatial and Product Design · Play. Make. Transform.**
 
 > *For us, complexity is a fun idea. And simplicity, a fun challenge.*
 
-Static HTML, CSS, and JavaScript portfolio, research, shop, and studio website for **MeliPop Design Lab**, founded by Melicia Planchart.
+Static HTML, CSS, and JavaScript portfolio, research, shop, and studio website for **Melipop Design Lab**, founded by Melicia Planchart.
 
 ## Structure
 - `index.html` — Semantic page shell and colour-coded navigation (**WORK** · **SHOP** · **STUDIO**)

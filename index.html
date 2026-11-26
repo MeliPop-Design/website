@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MeliPop Design Lab — Spatial and Product Design</title>
-  <meta name="description" content="MeliPop Design Lab is a spatial and product design practice founded by Melicia Planchart. Play. Make. Transform." />
+  <title>Melipop Design Lab — Spatial and Product Design</title>
+  <meta name="description"
+    content="Melipop Design Lab is a spatial and product design practice founded by Melicia Planchart. Play. Make. Transform." />
 
-  <!-- Fonts: Expressive Display Serif + Clean Geometric Sans + Architectural Mono -->
+  <!-- Fonts: Abril Fatface (Brand) + Montserrat Bold (Headers) + Plus Jakarta Sans (Body) + Space Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#app-main">Skip to content</a>
 
-  <!-- Top Brand & Colour-Coded Navigation -->
+  <!-- Top Brand & Navigation -->
   <header class="site-header" id="site-header">
     <div class="header-top">
-      <a href="#home" class="brand-mark" data-nav="home" aria-label="MeliPop Design Lab Home">
+      <a href="#home" class="brand-mark" data-nav="home" aria-label="Melipop Design Lab Home">
         <span class="brand-dots" aria-hidden="true">
           <span class="dot dot-yellow"></span>
           <span class="dot dot-pink"></span>
           <span class="dot dot-blue"></span>
         </span>
         <span class="brand-text">
-          <strong>MELIPOP</strong>
+          <strong>Melipop</strong>
           <span class="brand-sub">DESIGN LAB</span>
         </span>
       </a>
 
-      <div class="header-tagline">
-        <span>Spatial and Product Design</span>
-        <span class="sep" aria-hidden="true">·</span>
-        <strong>Play. Make. Transform.</strong>
-      </div>
+      <div class="header-right">
+        <nav class="main-nav" id="main-nav" aria-label="Primary">
+          <a href="#work" class="nav-link nav-link-work" data-nav="work">WORK</a>
+          <a href="#shop" class="nav-link nav-link-shop" data-nav="shop">SHOP</a>
+          <a href="#studio" class="nav-link nav-link-studio" data-nav="studio">STUDIO</a>
+        </nav>
 
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-      </button>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Switch light / dark theme">
+          <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+          <span class="theme-toggle-label">DARK</span>
+        </button>
+
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav"
+          aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
 
-    <nav class="main-nav" id="main-nav" aria-label="Primary">
-      <a href="#work" class="nav-band nav-work" data-nav="work">
-        <span class="nav-title">WORK</span>
-        <span class="nav-desc">Projects plus Research and Teaching</span>
-      </a>
-      <a href="#shop" class="nav-band nav-shop" data-nav="shop">
-        <span class="nav-title">SHOP</span>
-        <span class="nav-desc">Games, books, objects and editions</span>
-      </a>
-      <a href="#studio" class="nav-band nav-studio" data-nav="studio">
-        <span class="nav-title">STUDIO</span>
-        <span class="nav-desc">Profile, trajectory, collaborators and contact</span>
-      </a>
-    </nav>
+    <div class="color-ribbon" aria-hidden="true">
+      <span class="ribbon-seg ribbon-work"></span>
+      <span class="ribbon-seg ribbon-shop"></span>
+      <span class="ribbon-seg ribbon-studio"></span>
+    </div>
   </header>
 
   <!-- Main Dynamic View Container -->
@@ -80,7 +84,7 @@
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-logo">MeliPop Design Lab</div>
+        <div class="footer-logo">Melipop <span class="brand-sub">DESIGN LAB</span></div>
         <p class="footer-quote"><em>For us, complexity is a fun idea. And simplicity, a fun challenge.</em></p>
       </div>
       <div class="footer-links">
@@ -102,11 +106,11 @@
         <span class="footer-label">Connect</span>
         <a href="#studio/collaborators">Collaborators</a>
         <a href="#studio/contact">Contact</a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://www.linkedin.com/in/melicia-planchart" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="footer-year">2026</span> MeliPop Design Lab · Founded by Melicia Planchart</span>
+      <span>© <span id="footer-year">2026</span> Melipop Design Lab · Founded by Melicia Planchart</span>
       <span>Spatial &amp; Product Design · Play. Make. Transform.</span>
     </div>
   </footer>
@@ -115,4 +119,5 @@
   <script src="js/artwork.js"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>
